@@ -1,0 +1,343 @@
+/*
+Black #010102
+Blue #0E244C
+Lightblue #6A8FB5
+White #FFFFFF
+Orange #FF8411
+*/
+
+
+html {
+  height: 100%;
+}
+.logo {
+  /* position: -webkit-sticky; /* Safari */
+  /* position: sticky; */
+  /* position: fixed; */
+  top: 0;
+  width: 30%;
+  list-style-type: none;
+  margin: 10px 35% ;
+  padding: 0;
+  overflow: hidden;
+}
+.images-small-right {
+  /* position: fixed; */
+  /* top: 0; */
+  width: 50%;
+  list-style-type: none;
+  /* margin: 0 0 0 75% ; */
+  padding: 10px 0 10px 10px;
+  overflow: hidden;
+  float: right;
+}
+.images-small-left {
+  width: 50%;
+  list-style-type: none;
+  /* margin: 0 0 0 75% ; */
+  padding: 10px 10px 10px 0;
+  overflow: hidden;
+  float: left;
+}
+.images {
+  width: 100%;
+  list-style-type: none;
+  /* margin: 0 7.5% ; */
+  padding: 0 0;
+  overflow: hidden;
+  /* float: left; */
+}
+
+ul {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0E244C;
+  background-image: url(images/20181020-SatisAction-branding_LogoTypography.png);
+}
+
+li {
+  float: left;
+  background-repeat: no-repeat;
+  background-image: url(images/20181020-SatisAction-branding_LogoTypography.png);
+}
+
+li a {
+  display: block;
+  color: orange;
+  text-align: center;
+  margin: 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: -apple-system, 'Open sans', sans-serif;
+  font-size: 1.2em;
+  font-stretch: condensed;
+  background-repeat: no-repeat;
+  min-width: 65px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: orange;
+  color: #010102;
+}
+
+/* .home {
+  background-image: url(images/20181020-SatisAction-branding_LogoTypography.png);
+  width: 94px;
+} */
+
+@media screen and (max-width: 700px){
+    li {
+      float: none;
+      background-color: #0E244C;
+    }
+    ul {
+        margin: 0;
+        position: static;
+    }
+    .logo {
+        min-width: 250px;
+        margin: 10px 10% ;
+    }
+    .images-small-left, .images-small-right {
+      width: 100%;
+    }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: #0E244C;
+  font-family: "Open sans", sans-serif;
+  font-size: 100%;
+}
+
+div {
+  width: 100%;
+  height: auto;
+  padding: 35px 0px;
+}
+
+.dark {
+  color: orange;
+  background-color: #0E244C;
+  text-align: center;
+  align-items: center;
+}
+
+.light {
+  color: #0E244C;
+  background-color: #6A8FB5;
+  background-image: url("../images/20180929-DeVakmakerij_Background-light.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;  /* Do not repeat the image */
+  background-size: cover;
+  text-align: center;
+}
+
+.firstlight {
+  color: orange;
+  background-color: #0E244C;
+  text-align: center;
+  background-image: url("../images/20180929-DeVakmakerij_Background.png");
+  min-height: 325px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* padding-top: 150px; */
+}
+
+.lastlight {
+  color: #FDA355;
+  /* background-color: #e5e5e5; */
+  text-align: center;
+  background-image: url("../images/20180929-DeVakmakerij_Background.png");
+  height: 850px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menuTitle {
+  width: 30%;
+  min-width:150px;
+  margin: 0 0 0 35%;
+}
+
+p {
+  font-size: 1.1em;
+  vertical-align: top;
+  text-align: justify;
+  margin: 0.01em 15% 0.01em 15%;
+}
+
+p.center {
+  font-size: 1.1em;
+  vertical-align: top;
+  text-align: center;
+  margin: 1em 15em 1em 15em;
+}
+
+h1 {
+  font-family: "Open sans", sans-serif;
+  font-size: 1.5em;
+  vertical-align: top;
+  text-align: left;
+  margin: 0 15% 0 15%;
+  font-variant: small-caps;
+}
+
+#p-mission {
+  width: 800px;
+  height: 75px;
+  background: url("../images/20180929-DeVakmakerij_Paragraph-Title.png") 0 0;
+}
+
+.form-header {
+  width: 100%;
+  max-width: 400px;
+  background-color: black;
+}
+
+form {
+  /* width: 100%; */
+  max-width: 30%;
+  /* padding: 20px; */
+  /* background: #333; */
+  /* border: 1px solid rgba(0,0,0,.1); */
+  border-color: rgba(0, 0, 0, .05) rgba(0, 0, 0, .08) rgba(0, 0, 0, .1);
+  border-radius: 0px;
+  /* box-shadow: 0 3px 4px rgba(0,0,0,.05); */
+  margin: 0 0 0 35%;
+}
+
+select {
+  width: 80%;
+  padding: 16px 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0px;
+  border-color: #000;
+  background-color: #ffff7e;
+  font-size: 15px;
+}
+
+textarea {
+  width: 100%;
+  height: auto;
+  /* padding: 16px 20px; */
+  border-style: none;
+  /* border-width: 1px; */
+  border-radius: 0px;
+  /* background-color: #ffff7e; */
+  font-size: 15px;
+  /* text-align: center; */
+}
+
+label {
+  display: block;
+  /* padding-bottom: 3px; */
+  font-size: 15px;
+  /* font-weight: bold; */
+  color: #FDA355;
+  /* text-transform: uppercase; */
+  margin: 5px;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: px solid rgba(0, 0, 0, .1);
+  border-radius: 0px;
+  color: #333;
+
+  background: #CFD6C6;
+  font: inherit;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #FDA355;
+}
+
+.form-field {
+  margin-bottom: 10px;
+}
+
+.error, .errors-list {
+  font-size: 14px;
+  color: #C00;
+}
+
+.errors-list {
+  margin: 0 0 1.5em;
+  padding: 0 0 0 15px;
+}
+
+.form-field-invalid .input {
+  border-color: #C00;
+}
+
+.form-actions {
+  margin-top: 20px;
+}
+
+.btn {
+  /* display: block; */
+  width: 50%;
+  /* height: 10px; */
+  /* padding: 10px; */
+  /* background: #333; */
+  /* border: 1px solid rgba(0, 0, 0, .1); */
+  /* border-width: 1px 1px 3px; */
+  /* border-radius: 20px; */
+  font: 'Roboto';
+  font-weight: normal;
+  font-size: 35pt;
+  color: #ffff7e;
+  cursor: pointer;
+  /* outline: none; */
+  /* text-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 1px 1px rgba(0, 0, 0, .2);
+  box-shadow: 50 53px 54px rgba(0, 0, 0, .505); */
+   background-image: url("../images/20180929-DeVakmakerij_Button-Mail-Dark.png");
+   height: 70px; /* You must set a specified height */
+   background-position: center; /* Center the image */
+   background-repeat: no-repeat; /* Do not repeat the image */
+   background-size: contain; /* Resize the background image to cover the entire container */
+   border-style: hidden;
+}
+
+.btn:hover,
+.btn:focus {
+  outline: none;
+  /* background: #CFD6C6; */
+  background-image: url("../images/20180929-DeVakmakerij_Button-Mail-Light.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.flash {
+  padding: 15px 20px;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.flash-success {
+  background-color: #000;
+  border-color: #000;
+  color: #5e5e5e;
+}
