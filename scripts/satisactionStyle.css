@@ -230,7 +230,7 @@ select {
   font-size: 15px;
 }
 
-textarea {
+.textarea {
   width: 50%;
   height: auto;
   /* padding: 16px 20px; */
