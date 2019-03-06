@@ -144,6 +144,10 @@ div {
   text-align: center;
 }
 
+.text{
+    width: 50%;
+}
+
 .firstlight {
   color: orange;
   background-color: #0E244C;
@@ -230,8 +234,8 @@ select {
   font-size: 15px;
 }
 
-.textarea {
-  width: 50%;
+textarea {
+  width: 100%;
   height: auto;
   /* padding: 16px 20px; */
   border-style: none;
