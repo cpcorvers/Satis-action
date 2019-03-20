@@ -6,7 +6,6 @@ White #FFFFFF
 Orange #FF8411
 */
 
-
 html {
   height: 100%;
 }
@@ -48,6 +47,14 @@ html {
   /* float: left; */
 }
 
+ol {
+  /* list-style-type: none; */
+  margin: 0;
+  padding: 0;
+  text-align: left;
+    margin: 0 20% 0 20%;
+}
+
 ul {
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -87,33 +94,6 @@ li a {
 li a:hover {
   background-color: orange;
   color: #010102;
-}
-
-/* .home {
-  background-image: url(images/20181020-SatisAction-branding_LogoTypography.png);
-  width: 94px;
-} */
-
-@media screen and (max-width: 700px){
-    li {
-      float: none;
-      background-color: #0E244C;
-    }
-    ul {
-        margin: 0;
-        position: static;
-    }
-    .logo {
-        min-width: 250px;
-        margin: 10px 10% ;
-    }
-    .images-small-left, .images-small-right {
-      width: 100%;
-    }
-    p {
-      font-size: 1em;
-      margin: 0.01em 10% 0.01em 10%;
-    }
 }
 
 body {
@@ -197,20 +177,26 @@ p {
   margin: 0.01em 15% 0.01em 15%;
 }
 
-p.center {
-  font-size: 1.1em;
+.center {
+  font-size: 0.9em;
   vertical-align: top;
   text-align: center;
-  margin: 1em 35% 1em 35%;
+  margin: 1em 25% 1em 25%;
 }
 
-h1 {
+h1, h2 {
   font-family: "Open sans", sans-serif;
   font-size: 1.5em;
   vertical-align: top;
   text-align: left;
   margin: 0 15% 0 15%;
   font-variant: small-caps;
+}
+
+h2 {
+  font-size: 1.1em;
+  font-variant: normal;
+  margin-top: 10px;
 }
 
 #p-mission {
@@ -358,4 +344,36 @@ label {
   background-color: #000;
   border-color: #000;
   color: #5e5e5e;
+}
+@media screen and (max-width: 700px){
+  li {
+    float: none;
+    background-color: #0E244C;
+  }
+  ul {
+      margin: 0;
+      position: static;
+  }
+  .logo {
+      min-width: 250px;
+      margin: 10px 10% ;
+  }
+  .images-small-left, .images-small-right {
+    width: 100%;
+  }
+  p {
+    font-size: 1em;
+    margin: 0.01em 10% 0.01em 10%;
+  }
+  .center {
+    font-size: 0.8em;
+    margin: 0.01em 10% 0.01em 10%;
+  }
+
+  h1, h2 {
+    font-size: 1.3em;
+    margin: 0 10% 0 10%;
+    font-variant: small-caps;
+  }
+
 }
